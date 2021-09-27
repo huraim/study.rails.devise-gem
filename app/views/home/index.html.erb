@@ -1,0 +1,13 @@
+<br><br><br>
+
+ 
+
+<% if user_signed_in? %>
+  <%= current_user.email %><br>
+  <a href="/users/sign_out" data-method="delete">로그아웃</a>
+<% else %>
+  <a href="/users/sign_in">로그인</a>
+<% end %>
+
+<a href="/restricted">페이지</a>
+
