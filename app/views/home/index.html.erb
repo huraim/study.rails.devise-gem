@@ -4,7 +4,7 @@
 
 <% if user_signed_in? %>
   <%= current_user.email %><br>
-  <a href="/users/sign_out" data-method="delete">로그아웃</a>
+  <a href="/users/sign_out" data-method="delete" data-confirm="정말 로그아웃 하시겠습나까?">로그아웃</a>
 <% else %>
   <a href="/users/sign_in">로그인</a>
 <% end %>
